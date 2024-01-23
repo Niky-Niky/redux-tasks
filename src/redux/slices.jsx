@@ -47,4 +47,7 @@ export const { setStatusFilter } = filtersSlice.actions;
 export const filtersReducer = filtersSlice.reducer;
       
 export const {addTask, deleteTask, toggleCompleted} = taskSlice.actions;
+// export const {setStatusFilter} = filtersSlice.actions;
+
+// export const filtersReducer = filtersSlice.reducer;
 export const tasksReducer = taskSlice.reducer;
