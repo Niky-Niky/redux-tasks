@@ -3,10 +3,11 @@ import css from "./StatusFilter.module.css";
 import { statusFilters } from "../../../redux/constants";
 import { useDispatch, useSelector } from "react-redux";
 import { setStatusFilter } from "../../../redux/slices";
+import { getFiltersStatus } from "../../../redux/selectors";
 
 export const StatusFilter = () => {
   const dispatch = useDispatch()
-  const filter = useSelector(state=>state.filters)
+  const filter = useSelector(getFiltersStatus)
   const handelChange=(filter)=>dispatch(setStatusFilter(filter))
   return (
     <div className={css.wrapper}>
