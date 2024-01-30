@@ -1,4 +1,4 @@
-import { combineSlices, configureStore, combineReducers, legacy_createStore as createStore} from '@reduxjs/toolkit';
+import { combineReducers, legacy_createStore as createStore} from '@reduxjs/toolkit';
 import {filtersReducer, tasksReducer} from './slices';
 import {persistStore, persistReducer} from 'redux-persist';
 import storage from 'redux-persist/lib/storage';

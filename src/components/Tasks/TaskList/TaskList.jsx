@@ -13,8 +13,10 @@ export const TaskList = () => {
    const visibleTasks = tasks.filter((task)=>{
       switch (filterStatus) {
         case statusFilters.active:
+          console.log(!task.completed)
           return !task.completed;
         case statusFilters.completed:
+          console.log(task.completed)
             return task.completed;
         default:
           return task;

@@ -12,7 +12,7 @@ export const StatusFilter = () => {
   return (
     <div className={css.wrapper}>
       <Button onClick = {()=>handelChange(statusFilters.all)} selected={filter===statusFilters.all}>All</Button>
-      <Button onClick = {()=>handelChange(statusFilters.acyive)} selected={filter===statusFilters.active}>Active</Button>
+      <Button onClick = {()=>handelChange(statusFilters.active)} selected={filter===statusFilters.active}>Active</Button>
       <Button onClick = {()=>handelChange(statusFilters.completed)} selected={filter===statusFilters.completed}>Completed</Button>
     </div>
   );
